@@ -8,7 +8,8 @@ import { faLinkedin, faInstagram, faFacebook, faYoutube } from '@fortawesome/fre
 
 function BarraNavegacion() {
     return (
-    <Navbar expand="lg" className='mt-5 mb-5'>
+    <div className='container'>
+            <Navbar expand="lg" className='mt-5 mb-5'>
         <Container fluid>
         <Navbar.Brand href="#" className="logoHeader">
             <img src={logo} alt='logo'></img>
@@ -20,11 +21,11 @@ function BarraNavegacion() {
                 style={{ maxHeight: '250px' }}
                 navbarScroll
                 >
-                <Nav.Link href="#" className="menuHeader">home<span className='calypso'>.</span></Nav.Link>
+                <Nav.Link href="#" className="menuHeader">Home<span className='calypso'>.</span></Nav.Link>
                 <Nav.Link href="#quehacemos" className="menuHeader" style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>qué hacemos<span className='calypso'>.</span></Nav.Link>
-                <Nav.Link href="#nosotros" className="menuHeader">nosotros<span className='calypso'>.</span></Nav.Link>
-                <Nav.Link href="#clientes" className="menuHeader">clientes<span className='calypso'>.</span></Nav.Link>
-                <Nav.Link href="#contacto" className="menuHeader">contáctanos<span className='calypso'>.</span></Nav.Link>
+                <Nav.Link href="#nosotros" className="menuHeader">Nosotros<span className='calypso'>.</span></Nav.Link>
+                <Nav.Link href="#clientes" className="menuHeader">Clientes<span className='calypso'>.</span></Nav.Link>
+                <Nav.Link href="#contacto" className="menuHeader">Contáctanos<span className='calypso'>.</span></Nav.Link>
                 </Nav>
                 <div className="d-flex float-right">
                 <Nav.Link href="https://www.linkedin.com/company/equipo-triciklo"><FontAwesomeIcon icon={faLinkedin} className="rrssHeader" /></Nav.Link>
@@ -35,6 +36,9 @@ function BarraNavegacion() {
             </Navbar.Collapse>
         </Container>
     </Navbar>
+
+
+    </div>
     );
 }
 

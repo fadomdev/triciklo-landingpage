@@ -10,14 +10,14 @@ const HeroBanner = () => {
     const [isOpen, setOpen] = useState(false);
 
     return (
-        <Container className='section'>
+        <div className='section container'>
             <Row>
                 <div className="HeroBannerTriciklo">
                     <div className="image-container-left">
                         <img src={ImgSide} alt="Imagen 1" className="img-fluid" />
                     </div>
                     <div className="d-flex justify-content-center">
-                        <div className="image-container-center">
+                        <div className="image-container-center video-responsive">
                             <img src={BannerTriciklo} alt="Imagen 2" className="img-fluid" />
                             <ModalVideo
                                 channel="youtube"
@@ -31,12 +31,12 @@ const HeroBanner = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='Image-container-right'>
-                        <img src={Fig1} alt="Imagen 3" className="img-fluid" />
+                    <div className='image-container-right'>
+                        <img src={Fig1} alt="Imagen 3" className="waves" />
                     </div>
                 </div>
             </Row>
-        </Container>
+        </div>
     );
 };
 

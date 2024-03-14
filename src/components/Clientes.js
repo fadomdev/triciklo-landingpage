@@ -7,7 +7,7 @@ function Clientes() {
   return (
     <Container id="clientes">
       <h2 className='titulo-seccion'>
-        <span className='margin-text'>cli</span>entes
+        <span className='margin-text'>Cli</span>entes
         <span className='calypso'>.</span>
       </h2>
     </Container>

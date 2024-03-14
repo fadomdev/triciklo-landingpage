@@ -8,21 +8,27 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Clientes from './components/Clientes';
 import Footer from './components/Footer';
 import MySwiperComponent from './components/BrandSlider';
+import WhatsAppButton from './components/WhatsappButton';
+import { Container } from 'react-bootstrap';
 
 
 
 
 function App() {
   return (
-    <div className="App container">
-      <BarraNavegacion />
-      <HeroBanner />
-      <Quehacemos />
-      <Nosotros />
-      <Clientes />
-      <MySwiperComponent />
-      <Footer />
-    </div>
+    <Container>
+      <div className="App">
+        <WhatsAppButton />
+        <BarraNavegacion />
+        <HeroBanner />
+        <Quehacemos />
+        <Nosotros />
+        <Clientes />
+        <MySwiperComponent />
+        <Footer />
+      </div>
+    </Container>
+
   );
 }
 

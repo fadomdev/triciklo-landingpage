@@ -35,7 +35,7 @@ const Quehacemos = () => {
         <Col>
           <h3 className="title-service">TRADE</h3>
           <p className="description">
-            Creamos experiencias en los puntos de contacto con tu cliente lo que
+            Creamos experiencias en los puntos de contacto con tu cliente, lo que
             se traduce en awareness de marca:
           </p>
           <p className="description yellow">
@@ -49,10 +49,10 @@ const Quehacemos = () => {
         <Col>
           <h3 className="subtitulo-seccion yellow">
             <span className="margin-text">INFLUENCER</span>
-            <br></br>MARTETING
+            <br></br>MARKETING
           </h3>
           <p className="description">
-            Nuestra experiencia con más de cinco años trabajando el marketing de
+            Nuestra experiencia, con más de cinco años trabajando el marketing de
             influencer, nos permite crear estrategias medibles, a través de
             creadores de contenidos de diferentes mundos para que puedas generar
             awarness, potenciar tu storytelling, trabajar tu credibilidad y
@@ -95,7 +95,7 @@ const Quehacemos = () => {
             La comunicación cambia a gran velocidad, por eso, en Triciklo
             investigamos constantemente las nuevas tendencias y formatos con el
             fin de crear campañas bajo estrategias claras e ideas creativas,
-            respondiendo a los lineamientos de cada marca siempre con objetivos
+            respondiendo a los lineamientos de cada marca, siempre con objetivos
             certeros y medibles.
           </p>
         </Col>
@@ -128,7 +128,7 @@ const Quehacemos = () => {
             puedas conectar con tu audiencia. No importa si es una reunión
             pequeña o un evento masivo como una fiesta de fin de año, en
             Triciklo con la modalidad custom made realizamos una propuesta de
-            acuerdo a lo que necesitas.<br></br>Además contamos con el servicio
+            acuerdo a lo que necesitas.<br></br>Además, contamos con el servicio
             Delivery Box Experience, que consiste en la creación y distribución
             de envíos que complementan tu experiencia virtual.
           </p>

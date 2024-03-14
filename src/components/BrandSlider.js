@@ -31,12 +31,14 @@ import pantene from '../images/logo22.jpg';
 import pyg from '../images/logo23.jpg';
 import prisa from '../images/logo24.jpg';
 import roter from '../images/logo25.jpg';
+import { Container } from 'react-bootstrap';
 
 
 
 export default function App() {
     return (
         <>
+        <Container>
         <Swiper
             effect={'coverflow'}
             grabCursor={true}
@@ -129,6 +131,9 @@ export default function App() {
             <img src={roter} alt="roter" />
             </SwiperSlide>
         </Swiper>
+
+
+        </Container>
         </>
     );
 }

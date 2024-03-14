@@ -43,8 +43,9 @@
 body {
     background-image: url('../images/backgroundStoner.jpg');
     background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     color: white !important;
-    
 }
 
 ul li{
@@ -162,11 +163,11 @@ ul li{
 .image-container-left {
     position: absolute;
     top: 0;
-    left: -80px;
     width: 23px;
 }
 
 .image-container-center{
+    max-width: 100%;
     width: 60%;
     position: relative;
 }
@@ -178,23 +179,37 @@ ul li{
     transform: matrix(1, -0.04, 0.04, 1, 0, 0);
     right: 50%;
     top: 55%;
-    background: transparent linear-gradient(90deg, #FF00FF 0%, #FE05F9 9%, #FE14E8 22%, #FE2ECC 36%, #FD51A5 52%, #FC7F73 68%, #FBB637 86%, #FBE900 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(90deg, #FF00FF 0%, #FE05F9 9%, #FE14E8 22%, #FE2ECC 36%, #FD51A5 52%, #FC7F73 68%, #FBB637 86%, #FBE900 100%);
     color: white !important;
     font-family: 'Monserrat-Bold', sans-serif;
     font-size: 20px;
     justify-content: center;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
 }
 
-.custom-button button{
+.custom-button:hover {
+    background: #00FFFF; 
+}
+
+.custom-button button{ 
     border-radius: 0% !important;
 }
 
 
-.Image-container-right {
-    width: 20%;
+.image-container-right {
+    width: 200px; 
+    height: 100px;
     z-index: 4;
     position: absolute;
     right: 0;
+}
+
+.waves {
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
 }
 
 /***** End triciklo-banner *****/
@@ -457,13 +472,49 @@ ul li{
   .gallery .gallery-item.hide{
     display: none;
   }
+
+  /*whatsappButtom */
+  .whatsapp-button {
+    position: fixed; 
+    right: 50px; 
+    bottom: 30px; 
+    z-index: 1000;
+    background: transparent linear-gradient(90deg, #FF00FF 0%, #FE05F9 9%, #FE14E8 22%, #FE2ECC 36%, #FD51A5 52%, #FC7F73 68%, #FBB637 86%, #FBE900 100%);
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex; /* Habilita flexbox */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    cursor: pointer;
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E;
+}
+
+.fa-whatsapp {
+    color: white;
+    width: 45px;
+    height: 45px;
+}
+
   
   /*responsive*/
+
   @media(max-width: 491px){
     .gallery .gallery-item{
       width: 50%;
     }
+    .image-container-right {
+        display: none;
+    }
+
+    .whatsapp-button {
+        right: 70px;
+    }
   }
+
   @media(max-width: 467px){
       .gallery .gallery-item{
       width: 100%;
