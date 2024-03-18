@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Row } from 'react-bootstrap';
+import { Row } from 'react-bootstrap';
 import ImgSide from '../images/sidebar.png';
 import BannerTriciklo from '../images/imgHeader.png';
 import Fig1 from '../images/fig1.png';

@@ -22,7 +22,7 @@ function BarraNavegacion() {
                 navbarScroll
                 >
                 <Nav.Link href="#" className="menuHeader">Home<span className='calypso'>.</span></Nav.Link>
-                <Nav.Link href="#quehacemos" className="menuHeader" style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>qué hacemos<span className='calypso'>.</span></Nav.Link>
+                <Nav.Link href="#quehacemos" className="menuHeader" style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>Qué Hacemos<span className='calypso'>.</span></Nav.Link>
                 <Nav.Link href="#nosotros" className="menuHeader">Nosotros<span className='calypso'>.</span></Nav.Link>
                 <Nav.Link href="#clientes" className="menuHeader">Clientes<span className='calypso'>.</span></Nav.Link>
                 <Nav.Link href="#contacto" className="menuHeader">Contáctanos<span className='calypso'>.</span></Nav.Link>

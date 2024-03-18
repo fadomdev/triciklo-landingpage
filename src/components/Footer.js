@@ -34,7 +34,7 @@ const Footer = () => {
                 </ul>
             </Col>
             <Col xs={12} sm={6} md={3} className="direccion">
-                <p>Antillas 954 Las Condes,<br></br> Santiago de Chile</p>
+                <p>Antillas 954, Las Condes,<br></br> Santiago de Chile</p>
             </Col>
             </Row>
         </Container>
