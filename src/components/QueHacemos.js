@@ -6,7 +6,7 @@ const Quehacemos = () => {
   return (
     <Container className="section" id="quehacemos">
       <h2 className="titulo-seccion">
-        <span className="margin-text">qué</span>hacemos
+        <span className="margin-text">Qué</span>Hacemos
         <span className="calypso">.</span>
       </h2>
       <Row className="flex-column flex-md-row justify-content-center">
