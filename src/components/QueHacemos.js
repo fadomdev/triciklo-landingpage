@@ -136,7 +136,7 @@ const Quehacemos = () => {
       </Row>
       <h2 className="banner2">
         <span className="margin-text">Trabajos</span> con el sello{" "}
-        <span className="calypso">Tricicklo</span>
+        <span className="calypso">Triciklo</span>
       </h2>
       <Gallery />
     </Container>
