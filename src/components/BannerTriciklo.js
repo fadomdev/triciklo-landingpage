@@ -3,11 +3,13 @@ import { Row } from 'react-bootstrap';
 import ImgSide from '../images/sidebar.png';
 import BannerTriciklo from '../images/imgHeader.png';
 import Fig1 from '../images/fig1.png';
-import ModalVideo from 'react-modal-video';
+import LocalVideoModal from './LocalVideoModal';
+import reelVideo from '../assets/videos/reel.mp4';
 import '../../node_modules/react-modal-video/scss/modal-video.scss';
 
 const HeroBanner = () => {
-    const [isOpen, setOpen] = useState(false);
+    const [isOpen, setOpen] = useState(true);
+    const [isMuted, setIsMuted] = useState(true); // Empieza silenciado para poder reproducir automáticamente al entrar
 
     return (
         <div className='section container'>
@@ -19,14 +21,20 @@ const HeroBanner = () => {
                     <div className="d-flex justify-content-center">
                         <div className="image-container-center video-responsive">
                             <img src={BannerTriciklo} alt="Imagen 2" className="img-fluid" />
-                            <ModalVideo
-                                channel="youtube"
-                                youtube={{ mute: 0, autoplay: 0 }}
+                            <LocalVideoModal
+                                videoSrc={reelVideo}
                                 isOpen={isOpen}
-                                videoId="-P1dArmDR58?si=MTcyV5wOnR5SZwZf"
-                                onClose={() => setOpen(false)} 
+                                onClose={() => {
+                                    setOpen(false);
+                                    setIsMuted(false); // Al cerrar el modal automático, cambiamos muted a false para que la próxima vez tenga sonido
+                                }}
+                                startTime={0}
+                                muted={isMuted}
                             />
-                            <div className="custom-button d-flex align-items-center text-center" onClick={() => setOpen(true)}>
+                            <div className="custom-button d-flex align-items-center text-center" onClick={() => {
+                                setIsMuted(false); // Reproducir con sonido cuando el usuario hace clic manualmente
+                                setOpen(true);
+                            }}>
                                 VER REEL<span className='calypso'>.</span>
                             </div>
                         </div>
